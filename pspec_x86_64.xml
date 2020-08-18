@@ -3,8 +3,8 @@
         <Name>python-language-server</Name>
         <Homepage>https://github.com/palantir/python-language-server</Homepage>
         <Packager>
-            <Name>Algent Albrahimi</Name>
-            <Email>algent@protonmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@getsol.us</Email>
         </Packager>
         <License>MIT</License>
         <PartOf>programming.python</PartOf>
@@ -100,12 +100,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2020-08-12</Date>
+        <Update release="2">
+            <Date>2020-08-18</Date>
             <Version>0.34.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Algent Albrahimi</Name>
-            <Email>algent@protonmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@getsol.us</Email>
         </Update>
     </History>
 </PISI>

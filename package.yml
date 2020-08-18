@@ -1,11 +1,11 @@
 name       : python-language-server
 version    : 0.34.1
-release    : 1
+release    : 2
 source     :
-    - https://github.com/palantir/python-language-server/archive/0.34.1.tar.gz : 21effbc5dd2c060d3104dbd992457106c769e4047c76cd4fdc926887827ab1f8
+    - https://github.com/palantir/python-language-server/archive/0.34.1.tar.gz : e340614e2fb8428a5e12ebd40fa017832fb34627b43cab8d14b18fe6aced870c
 homepage   : https://github.com/palantir/python-language-server
 license    : MIT
-component  : programming.python 
+component  : programming.python
 summary    : An implementation of the Language Server Protocol for Python
 description: |
     An implementation of the Language Server Protocol for Python
