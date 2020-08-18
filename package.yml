@@ -1,0 +1,40 @@
+name       : python-language-server
+version    : 0.34.1
+release    : 1
+source     :
+    - https://github.com/palantir/python-language-server/archive/0.34.1.tar.gz : 21effbc5dd2c060d3104dbd992457106c769e4047c76cd4fdc926887827ab1f8
+homepage   : https://github.com/palantir/python-language-server
+license    : MIT
+component  : programming.python 
+summary    : An implementation of the Language Server Protocol for Python
+description: |
+    An implementation of the Language Server Protocol for Python
+builddeps  :
+    - autopep8
+    - flake8
+    - matplotlib
+    - pydocstyle
+    - pyflakes
+    - pylint
+    - python-jsonrpc-server
+    - python-mock
+    - python-pandas
+    - python-pytest-cov
+    - python-rope
+    - python3-jedi
+    - python3-qt5
+    - yapf
+rundeps    :
+    - python-jsonrpc-server
+    - python-pluggy
+    - python3-jedi
+    - yapf
+setup      : |
+    # drop ujson version
+    sed -i 's/ujson<=1.35;/ujson;/' setup.py
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
+check      : |
+    %python3_test pytest3 -v
