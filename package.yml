@@ -1,8 +1,8 @@
 name       : python-language-server
-version    : 0.34.1
-release    : 2
+version    : 0.36.1
+release    : 3
 source     :
-    - https://github.com/palantir/python-language-server/archive/0.34.1.tar.gz : e340614e2fb8428a5e12ebd40fa017832fb34627b43cab8d14b18fe6aced870c
+    - https://github.com/palantir/python-language-server/archive/0.36.1.tar.gz : 7320643efb01be8956557cead3d46e782d6db4e3ca351bb659d09c00bd70c44a
 homepage   : https://github.com/palantir/python-language-server
 license    : MIT
 component  : programming.python
@@ -16,6 +16,7 @@ builddeps  :
     - pydocstyle
     - pyflakes
     - pylint
+    - python-flaky
     - python-jsonrpc-server
     - python-mock
     - python-pandas
@@ -29,9 +30,6 @@ rundeps    :
     - python-pluggy
     - python3-jedi
     - yapf
-setup      : |
-    # drop ujson version
-    sed -i 's/ujson<=1.35;/ujson;/' setup.py
 build      : |
     %python3_setup
 install    : |
