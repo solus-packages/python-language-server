@@ -1,8 +1,8 @@
 name       : python-language-server
 version    : 0.36.1
-release    : 3
+release    : 4
 source     :
-    - https://github.com/palantir/python-language-server/archive/0.36.1.tar.gz : 7320643efb01be8956557cead3d46e782d6db4e3ca351bb659d09c00bd70c44a
+    - https://github.com/palantir/python-language-server/archive/0.36.1.tar.gz : e7bf10efed9dad2f6c0d6c0b77b066006ba2ea652eab1330a02296110bac395a
 homepage   : https://github.com/palantir/python-language-server
 license    : MIT
 component  : programming.python
