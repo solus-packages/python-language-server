@@ -1,8 +1,8 @@
 name       : python-language-server
-version    : 0.36.1
-release    : 4
+version    : 0.36.2
+release    : 5
 source     :
-    - https://github.com/palantir/python-language-server/archive/0.36.1.tar.gz : e7bf10efed9dad2f6c0d6c0b77b066006ba2ea652eab1330a02296110bac395a
+    - https://github.com/palantir/python-language-server/archive/0.36.2.tar.gz : fb573f780467c1cae0de47065eecbaaf9b457bd5cbe9f5cf8409224e1cd21cf6
 homepage   : https://github.com/palantir/python-language-server
 license    : MIT
 component  : programming.python
@@ -14,7 +14,6 @@ builddeps  :
     - flake8
     - matplotlib
     - pydocstyle
-    - pyflakes
     - pylint
     - python-flaky
     - python-jsonrpc-server
@@ -28,6 +27,7 @@ builddeps  :
 rundeps    :
     - python-jsonrpc-server
     - python-pluggy
+    - python-typing-extensions
     - python3-jedi
     - yapf
 build      : |
