@@ -100,8 +100,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2021-02-24</Date>
+        <Update release="6">
+            <Date>2021-05-10</Date>
             <Version>0.36.2</Version>
             <Comment>Packaging update</Comment>
             <Name>Algent Albrahimi</Name>

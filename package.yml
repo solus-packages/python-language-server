@@ -1,6 +1,6 @@
 name       : python-language-server
 version    : 0.36.2
-release    : 5
+release    : 6
 source     :
     - https://github.com/palantir/python-language-server/archive/0.36.2.tar.gz : fb573f780467c1cae0de47065eecbaaf9b457bd5cbe9f5cf8409224e1cd21cf6
 homepage   : https://github.com/palantir/python-language-server
@@ -25,6 +25,9 @@ builddeps  :
     - python3-qt5
     - yapf
 rundeps    :
+    - autopep8
+    - flake8
+    - pydocstyle
     - python-jsonrpc-server
     - python-pluggy
     - python-typing-extensions
@@ -35,4 +38,4 @@ build      : |
 install    : |
     %python3_install
 check      : |
-    %python3_test pytest3 -v
+    %python3_test pytest3 -v -k 'not test_flake8_lint.py'
