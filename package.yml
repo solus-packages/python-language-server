@@ -1,6 +1,6 @@
 name       : python-language-server
 version    : 0.36.2
-release    : 6
+release    : 7
 source     :
     - https://github.com/palantir/python-language-server/archive/0.36.2.tar.gz : fb573f780467c1cae0de47065eecbaaf9b457bd5cbe9f5cf8409224e1cd21cf6
 homepage   : https://github.com/palantir/python-language-server
@@ -33,6 +33,11 @@ rundeps    :
     - python-typing-extensions
     - python3-jedi
     - yapf
+setup      : |
+    sed -i 's/pycodestyle<2.7.0,/pycodestyle/g' setup.py
+    sed -i 's/pyflakes<2.3.0,/pyflakes/g' setup.py
+    sed -i 's/pycodestyle>=2.6.0,<2.7.0/pycodestyle>=2.6.0/g' setup.py
+    sed -i 's/pyflakes>=2.2.0,<2.3.0/pyflakes>=2.2.0/g' setup.py
 build      : |
     %python3_setup
 install    : |
